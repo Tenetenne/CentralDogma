@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>セントラルドグマ</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+  <h5 class="description">A, T, G, CからなるDNA鎖を入力後に変換ボタンを押すと、複製、転写、翻訳した結果を表示します。終止コドンがあれば、そこで翻訳終了します。</h5>
+  <h2>DNA鎖
+  <form name="js">
+    <div class="a">5'</div><input type="text" id="mytext" class="a" name="dna" onkeydown="keydown_enter();"style="width:400px;"><div class="a">3'</div>
+    <input type="button" id="mybutton" value="変換" onclick="tlanslate()">
+    <input type="text" style="display: none;">
+  </form></h2>
+  <h2>相補鎖</h2>
+  <h3  id="complementary" class="result"></h3>
+  <h2>mRNA鎖</h2>
+  <h3  id="rna" class="result"></h3>
+  <h2>アミノ酸配列</h2>
+  <h3 id="amino1" class="result"></h3>
+  <h3 id="amino2" class="result"></h3>
+  <script src="js/main.js"></script>
+  <div id="Name">By Tenetenne</div>
+  </div>
+</body>
+</html>
